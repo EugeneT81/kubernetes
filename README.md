@@ -10,4 +10,4 @@
 
 3. Deployment манифест 
 
-[text](mydepl1.yml)
+[Deployment.yaml](mydepl1.yml)
