@@ -35,17 +35,21 @@ PVC not found:
 
 Task 2:
 
-1. Применение манифеста Deployment. Состояние POD.
+1. Установка NFS сервера.
+
+![alt text](kub9.png)
+
+2. Применение манифеста Deployment. Состояние POD.
 
 
 ![alt text](kub10.png)
 
 
-2. Применение манифеста PVC. Состояние POD.  
+3. Применение манифеста PVC. Состояние POD.  
 
 ![alt text](kub11.png)
 
-3. Манифесты:
+4. Манифесты:
 
 
 [Deployment](mydeployment2.yml)
