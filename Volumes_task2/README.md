@@ -1,3 +1,4 @@
+Task 1:
 1. Применение манифеста Deployment. Состояние POD.
 
 ![alt text](kub4.png)
@@ -29,3 +30,24 @@ PVC not found:
 [PV](mypv.yml)
 
 [PVC](mypvc.yml)
+
+
+
+Task 2:
+
+1. Применение манифеста Deployment. Состояние POD.
+
+
+![alt text](kub10.png)
+
+
+2. Применение манифеста PVC. Состояние POD.  
+
+![alt text](kub11.png)
+
+3. Манифесты:
+
+
+[Deployment](mydeployment2.yml)
+
+
