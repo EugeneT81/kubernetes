@@ -50,4 +50,4 @@ Task 2:
 
 [Deployment](mydeployment2.yml)
 
-
+[PVC](mypvc2.yml)
