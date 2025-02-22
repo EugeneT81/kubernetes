@@ -1,0 +1,30 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: volumes-task2
+spec:
+  selector:
+    matchLabels:
+      homework: task2
+  template:
+    metadata:
+      labels:
+        homework: task2
+    spec:
+      containers:
+        - name: busybox
+          image: busybox
+          command: ['sh', '-c', 'while true; do echo "Current time is $(date)" >> /shared_folder2/messages.txt; sleep 10; done']
+          volumeMounts:
+          - mountPath: /shared_folder2
+            name: my-volume
+        - name: multitool
+          image: wbitt/network-multitool
+          command: ['sh', '-c', 'tail -f /shared_folder2/messages.txt']
+          volumeMounts:
+          - mountPath: /shared_folder2
+            name: my-volume
+      volumes:
+      - name: my-volume
+        persistentVolumeClaim:
+          claimName: my-localpvc  

@@ -1,0 +1,31 @@
+1. Применение манифеста Deployment. Состояние POD.
+
+![alt text](kub4.png)
+
+PVC not found:
+
+![alt text](kub5.png)
+
+
+2. Применение манифеста PV, PVC. Состояние POD - Running.
+
+![alt text](kub6.png)
+
+3. Удаление Deployment и PVC. Состояние PV.
+
+"host_path deleter only supports /tmp/.+ but received provided /task2"
+
+![alt text](kub7.png)
+
+
+4. Файл на локальном хосте. Удаление PV. Проверка файла на локальном хосте.
+
+![alt text](kub8.png)
+
+5. Манифесты:
+
+[Deployment](mydeployment.yml)
+
+[PV](mypv.yml)
+
+[PVC](mypvc.yml)
