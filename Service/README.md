@@ -32,3 +32,8 @@ Task 2:
 
 
 ![alt text](fox2.png)
+
+
+4. Манифест SVC Nodeport type:
+
+[SVC Nodeport](SVC_nodeport.yaml)
