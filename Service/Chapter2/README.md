@@ -17,17 +17,20 @@ Task 1:
 
 Task 2:
 
-1. Применение манифестов SVC Nodeport type. Состояние PODs, SVC.
+1. Enable Ingress.
+
+![alt text](kub25.png)
+
+kubectl  apply -f Ingress.yaml 
+
+2. Доступ с помощью браузера:
+
+![NGINX](kub26.png)
+
+![MiltiTool](kub27.png)
 
 
+3. Манифест Ingress:
 
-2. Доступ с помощью браузера на порт 32000
-
-
-
-3. Доступ с помощью браузера на порт 32001
-
-
-
-4. Манифест SVC Nodeport type:
+[Ingress](Ingress.yaml)
 
