@@ -25,7 +25,15 @@ kubectl  apply -f Ingress.yaml
 
 2. Доступ с помощью браузера:
 
+eugene@eugenek8s-client:~/kubernetes/kubernetes/Service/Chapter2$ more /etc/hosts | grep myi
+192.168.1.200 myingress.service.ru 
+
+http://myingress.service.ru
+
 ![NGINX](kub26.png)
+
+
+http://myingress.service.ru/api
 
 ![MiltiTool](kub27.png)
 
