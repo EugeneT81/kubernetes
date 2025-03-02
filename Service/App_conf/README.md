@@ -30,3 +30,43 @@ Task 1:
 
 
 Task 2:
+
+1. Манифест Deployment из первого задания, только с одним nginx контейнером.
+ConfigMap из первого задания.
+
+[Deployment2](Deployment2.yaml)
+
+
+[ConfigMap](ConfigMap.yaml)
+
+2. Выпускаю самоподписной сертификат SSL.
+
+
+
+openssl req -x509 -nodes -days 100 -newkey rsa:1024 -keyout ingress.key -out ingress.crt -subj "/CN=myingress.service.ru/O=myingress.service.ru"
+
+kubectl create secret tls ingress-cert --key=ingress.key --cert=ingress.crt -o yaml
+
+![alt text](kub65.png)
+
+
+3. Создал Secret type tls:
+
+![alt text](kub66.png)
+
+
+5. Проверка работы https:
+
+![alt text](kub63.png) 
+
+![alt text](kub64.png)
+
+
+6. Манифесты:
+
+[Deployment2](Deployment2.yaml)
+
+[Ingress](Ingress2.yaml)
+
+
+
