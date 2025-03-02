@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myconfigmap
+data:
+  HTTP_PORT: '1380'
+  index.html: |
+    <html>
+    <h1>Welcome</h1>
+    </br>
+    <h1>Some words for testing homework!!! </h1>
+    </html>
